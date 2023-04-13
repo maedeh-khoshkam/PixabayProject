@@ -1,8 +1,10 @@
 pluginManagement {
     repositories {
+        gradlePluginPortal()
         google()
         mavenCentral()
-        gradlePluginPortal()
+        maven("https://jitpack.io")
+        maven("https://plugins.gradle.org/m2/")
     }
 }
 dependencyResolutionManagement {
@@ -10,7 +12,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven("https://jitpack.io")
+        maven("https://plugins.gradle.org/m2/")
     }
 }
 rootProject.name = "PixabayProject"
-include ':app'
+include(":app")
